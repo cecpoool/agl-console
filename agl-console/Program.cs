@@ -24,11 +24,16 @@ namespace agl_console
 
         static async Task Main(string[] args)
         {
-            var msg = "";
-            await ProcessJson();
-            var people = JsonSerializer.Deserialize<Person>(msg);
+            var processedMsg = await ProcessJson();
+            var people = JsonSerializer.Deserialize<Person[]>(processedMsg);
 
-            Console.WriteLine(people);
+            public override string ToString() { return Person "name:"  Person.name; }
+
+
+            foreach(Person person in people)
+            {
+                Console.Write(person);
+            }
 
         }
     }

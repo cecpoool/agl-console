@@ -116,11 +116,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cjmco\\source\\repos\\agl-console\\agl-console\\agl-console.csproj",
+      "projectUniqueName": "C:\\Users\\cjmco\\Proj2020\\agl-console\\agl-console\\agl-console.csproj",
       "projectName": "agl-console",
-      "projectPath": "C:\\Users\\cjmco\\source\\repos\\agl-console\\agl-console\\agl-console.csproj",
+      "projectPath": "C:\\Users\\cjmco\\Proj2020\\agl-console\\agl-console\\agl-console.csproj",
       "packagesPath": "C:\\Users\\cjmco\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cjmco\\source\\repos\\agl-console\\agl-console\\obj\\",
+      "outputPath": "C:\\Users\\cjmco\\Proj2020\\agl-console\\agl-console\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -9,7 +9,7 @@ namespace agl_console
         public string name { get; set; }
         public string gender { get; set; }
         public int age { get; set; }
-        public virtual ICollection<Pet> Pets { get; set; }
+        public virtual ICollection<Pet> pets { get; set; }
 
     }
 }
