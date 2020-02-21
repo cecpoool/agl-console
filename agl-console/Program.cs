@@ -14,7 +14,7 @@ namespace agl_console
             var stringTask = client.GetStringAsync("http://agl-developer-test.azurewebsites.net/people.json");
 
             var msg = await stringTask;
-            Console.WriteLine(msg);
+          //  Console.WriteLine(msg);
             return msg;
             
         }
@@ -22,17 +22,17 @@ namespace agl_console
 
         private static readonly HttpClient client = new HttpClient();
 
+     
+
         static async Task Main(string[] args)
         {
             var processedMsg = await ProcessJson();
             var people = JsonSerializer.Deserialize<Person[]>(processedMsg);
 
-            public override string ToString() { return Person "name:"  Person.name; }
-
 
             foreach(Person person in people)
             {
-                Console.Write(person);
+                Console.WriteLine(person);
             }
 
         }

@@ -1,15 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace agl_console
 {
-    class Person
+    public class Person
     {
-        public string name { get; set; }
-        public string gender { get; set; }
-        public int age { get; set; }
-        public virtual ICollection<Pet> pets { get; set; }
+        [JsonPropertyName("name")]
+        public string Name { get; set; }
+        [JsonPropertyName("gender")]
+        public string Gender { get; set; }
+        [JsonPropertyName("age")]
+        public int Age { get; set; }
+        [JsonPropertyName("pets")]
+        public virtual ICollection<Pet> Pets { get; set; }
+
+        public override string ToString() { return "Person name:" + Name; }
 
     }
 }
