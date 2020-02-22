@@ -17,7 +17,8 @@ namespace agl_console
         [JsonPropertyName("pets")]
         public virtual ICollection<Pet> Pets { get; set; }
 
-        public override string ToString() { return "Person name:" + Name; }
+        //Used for testing
+       // public override string ToString() { return "Person name:" + Name; }
 
     }
 }
