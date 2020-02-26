@@ -26,13 +26,20 @@ namespace agl_console
             var processedMsg = await ProcessJson();
             var people = JsonSerializer.Deserialize<Person[]>(processedMsg);
 
-            IEnumerable<Person> female = people.Where(people => people.Gender == "Female");
-            IEnumerable<Person> male = people.Where(people => people.Gender == "Male");
+
+             IEnumerable<Person> SortOwner(string gender)
+            {
+                return people.Where(people => people.Gender == gender);
+            }
+
+
+            IEnumerable<Person> female = SortOwner("Female");
+            IEnumerable<Person> male = SortOwner("Male");
 
             List<string> FemCats = new List<string>();
             List<string> MaleCats = new List<string>();
 
-
+            
             foreach (Person chick in female)
             {
                 if (chick.Pets != null)
